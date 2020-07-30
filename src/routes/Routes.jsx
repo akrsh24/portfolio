@@ -10,12 +10,12 @@ function Routes() {
     return (
         <div>
             <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/home" component={Home} />
-                <Route exact path="/about" component={About} />
-                <Route exact path="/contact" component={Contact} />
-                <Route exact path="/certifications" component={Certifications} />
-                <Route exact path="/resume" component={Resume} />
+                <Route exact path="/portfolio/" component={Home} />
+                <Route exact path="/portfolio/home" component={Home} />
+                <Route exact path="/portfolio/about" component={About} />
+                <Route exact path="/portfolio/contact" component={Contact} />
+                <Route exact path="/portfolio/certifications" component={Certifications} />
+                <Route exact path="/portfolio/resume" component={Resume} />
             </Switch>
         </div>
     );

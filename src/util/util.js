@@ -19,23 +19,23 @@ export const theme = createMuiTheme({
 export const appBarList = [
     {
         "name": "Home",
-        "link": "/home"
+        "link": "/portfolio/home"
     },
     {
         "name": "About",
-        "link": "/about"
+        "link": "/portfolio/about"
     },
     {
         "name": "Resume",
-        "link": "/resume"
+        "link": "/portfolio/resume"
     },
     {
         "name": "Certifications",
-        "link": "/certifications"
+        "link": "/portfolio/certifications"
     },
     {
         "name": "Contact",
-        "link": "/contact"
+        "link": "/portfolio/contact"
     }
 ];
 //----------------------
