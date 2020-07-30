@@ -1,8 +1,9 @@
 import React, { useRef, useEffect } from 'react';
-import { Paper, Dialog, makeStyles } from '@material-ui/core';
+import { Dialog, List, ListItem, ListItemText, makeStyles } from '@material-ui/core';
 
-const useStyles = makeStyles((theme) => ({
-    dialog: {
+const useStyles = makeStyles(() => ({
+    listItem: {
+        color: 'white'
     }
 }));
 
@@ -10,9 +11,9 @@ const MenuDialog = props => {
     const handleClose = () => {
         props.toggleDialog(false);
     }
-    console.log("MenuDialog");
     const wrapper = useRef();
     useEffect(() => wrapper.current && wrapper.current.focus());
+
     const classes = useStyles();
 
     return (
@@ -20,13 +21,20 @@ const MenuDialog = props => {
             <Dialog onClose={handleClose} open={props.open}
                 PaperProps={{
                     style: {
-                        backgroundColor: 'opaque',
+                        backgroundColor: "rgba(0, 0, 0, 0.5)",
                         boxShadow: 'none',
-                        fullScreen: false
+                        width:"90%",
+                        height:"50%"
                     },
                 }}
             >
-                <Paper children={"Hello","Hell2"} className={classes.dialog} />
+                <List>
+                    {props.appBarList.map((menuList) => (
+                        <ListItem button key={menuList}>
+                            <ListItemText primary={menuList} className={classes.listItem} />
+                        </ListItem>
+                    ))}
+                </List>
             </Dialog>
         </div >
     );
