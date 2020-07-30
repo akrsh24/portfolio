@@ -34,7 +34,7 @@ const useStyles = makeStyles(() => ({
 function Navbar() {
 
     const [open, handleOpen] = useState(false);
-    const breakpointMatches = useMediaQuery(theme.breakpoints.down('md'));
+    const breakpointMatches = useMediaQuery(theme.breakpoints.down('lg'));
 
     const handleClick = () => {
         handleOpen(true);

@@ -1,16 +1,20 @@
 import { createMuiTheme } from "@material-ui/core";
 
+// -------custom-breakpoints-min-values-----------------//
+export const breakpointsValues = {
+    xs: 0,
+    sm: 320.01,
+    md: 425.01,
+    lg: 768.01,
+    xl: 1024.01,
+    xxl: 1440.01
+}
+//----------------------
+
 // -------custom-breakpoints-----------------//
 export const theme = createMuiTheme({
     breakpoints: {
-        values: {
-            xs: 0,
-            sm: 321,
-            md: 426,
-            lg: 769,
-            xl: 1025,
-            xxl: 1441
-        },
+        values: breakpointsValues,
     },
 });
 //----------------------
@@ -19,7 +23,7 @@ export const theme = createMuiTheme({
 export const appBarList = [
     {
         "name": "Home",
-        "link": "/portfolio/home"
+        "link": "/portfolio/"
     },
     {
         "name": "About",
