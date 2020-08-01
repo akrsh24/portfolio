@@ -3,11 +3,11 @@ import { createMuiTheme } from "@material-ui/core";
 // -------custom-breakpoints-min-values-----------------//
 export const breakpointsValues = {
     xs: 0,
-    sm: 320.01,
-    md: 425.01,
-    lg: 768.01,
-    xl: 1024.01,
-    xxl: 1440.01
+    sm: 321.01,
+    md: 426.01,
+    lg: 769.01,
+    xl: 1025.01,
+    xxl: 1441.01
 }
 //----------------------
 
