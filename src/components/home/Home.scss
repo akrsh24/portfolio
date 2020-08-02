@@ -1,0 +1,184 @@
+@import "../../util/variables";
+
+$background-url: url("./image_2.jpeg");
+
+@media (min-width: $xs-min-width) and (max-width: $xs-max-width) {
+    .home-section {
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        right: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-section .home-name-title {
+        text-align: center;
+        color: white;
+        font-family: "Fredoka One", cursive;
+        font-size: 25px;
+    }
+
+    .home-section .home-description {
+        text-align: center;
+        color: white;
+        font-family: "Roboto Slab", serif;
+        font-size: 15px;
+    }
+
+    .home-section .home-social {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: $sm-min-width) and (max-width: $sm-max-width) {
+    .home-section {
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        right: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-section .home-name-title {
+        text-align: center;
+        color: white;
+        font-family: "Fredoka One", cursive;
+        font-size: 30px;
+    }
+
+    .home-section .home-description {
+        text-align: center;
+        color: white;
+        font-family: "Roboto Slab", serif;
+        font-size: 20px;
+    }
+
+    .home-section .home-social {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: $md-min-width) and (max-width: $md-max-width) {
+    .home-section {
+        position: absolute;
+        top: 35%;
+        left: 20%;
+        right: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-section .home-name-title {
+        text-align: center;
+        color: white;
+        font-family: "Fredoka One", cursive;
+        font-size: 35px;
+    }
+
+    .home-section .home-description {
+        text-align: center;
+        color: white;
+        font-family: "Roboto Slab", serif;
+        font-size: 25px;
+    }
+
+    .home-section .home-social {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: $lg-min-width) and (max-width: $lg-max-width) {
+    .home-section {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        right: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-section .home-name-title {
+        text-align: left;
+        color: white;
+        font-family: "Fredoka One", cursive;
+        font-size: 40px;
+    }
+
+    .home-section .home-description {
+        text-align: left;
+        color: white;
+        font-family: "Roboto Slab", serif;
+        font-size: 30px;
+    }
+
+    .home-section .home-social {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: $xl-min-width) and (max-width: $xl-max-width) {
+    .home-section {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        right: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-section .home-name-title {
+        text-align: left;
+        color: white;
+        font-family: "Fredoka One", cursive;
+        font-size: 50px;
+    }
+
+    .home-section .home-description {
+        text-align: left;
+        color: white;
+        font-family: "Roboto Slab", serif;
+        font-size: 40px;
+    }
+
+    .home-section .home-social {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: $xxl-min-width) {
+    .home-section {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        right: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-section .home-name-title {
+        text-align: left;
+        color: white;
+        font-family: "Fredoka One", cursive;
+        font-size: 60px;
+    }
+
+    .home-section .home-description {
+        text-align: left;
+        color: white;
+        font-family: "Roboto Slab", serif;
+        font-size: 50px;
+    }
+
+    .home-section .home-social {
+        display: flex;
+        justify-content: space-around;
+    }
+}
