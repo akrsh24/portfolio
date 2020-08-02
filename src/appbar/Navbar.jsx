@@ -28,6 +28,9 @@ const useStyles = makeStyles(() => ({
     navLinkStyle: {
         textDecoration: "none",
         color: "white",
+    },
+    activeListItem: {
+        borderBottom: "2px solid white "
     }
 }));
 
@@ -57,7 +60,7 @@ function Navbar() {
                             appBarList.map(barList => {
                                 return (
                                     <Typography key={barList.name} className={classes.appBarListStyle}>
-                                        <NavLink to={barList.link} className={classes.navLinkStyle}>
+                                        <NavLink exact to={barList.link} className={classes.navLinkStyle} activeClassName={classes.activeListItem}>
                                             {barList.name}
                                         </NavLink>
                                     </Typography>

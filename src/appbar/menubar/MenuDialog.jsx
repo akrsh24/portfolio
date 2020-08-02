@@ -9,6 +9,9 @@ const useStyles = makeStyles(() => ({
         color: "white",
         fontFamily: 'Bangers',
         fontSize: "16px",
+    },
+    activeListItem: {
+        borderBottom: "2px solid white "
     }
 }));
 
@@ -42,7 +45,7 @@ const MenuDialog = props => {
                     {
                         appBarList.map((barList) => (
                             <ListItem button key={barList.name}>
-                                <NavLink to={barList.link} className={classes.listItem} onClick={handleClose}>
+                                <NavLink exact to={barList.link} className={classes.listItem} activeClassName={classes.activeListItem} onClick={handleClose}>
                                     {barList.name}
                                 </NavLink>
                             </ListItem>
