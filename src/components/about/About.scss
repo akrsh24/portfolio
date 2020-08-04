@@ -1,0 +1,47 @@
+@import "../../util/variables";
+
+@media (min-width: $xs-min-width) and (max-width: $xs-max-width) {
+}
+
+@media (min-width: $sm-min-width) and (max-width: $sm-max-width) {
+    .about-container {
+        position: absolute;
+        top: 1%;
+        left: 1%;
+        right: 1%;
+    }
+
+    .about-text-container {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        color: white;
+    }
+
+    .about-text-div {
+        max-height: calc(100vh - 108px);
+        overflow-y: auto;
+    }
+
+    .about-text-image {
+        position: relative;
+        width: 60%;
+        left: 22%;
+    }
+
+    div > img {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: $md-min-width) and (max-width: $md-max-width) {
+}
+
+@media (min-width: $lg-min-width) and (max-width: $lg-max-width) {
+}
+
+@media (min-width: $xl-min-width) and (max-width: $xl-max-width) {
+}
+
+@media (min-width: $xxl-min-width) {
+}
