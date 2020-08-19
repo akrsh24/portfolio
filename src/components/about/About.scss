@@ -18,6 +18,14 @@
     .about-text-div {
         height: 70vh;
         overflow-y: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+    }
+
+    .about-text-div::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0;
     }
 
     .about-text-image {
@@ -52,6 +60,14 @@
     .about-text-div {
         height: 73vh;
         overflow-y: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+    }
+
+    .about-text-div::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0;
     }
 
     .about-text-image {
@@ -86,6 +102,14 @@
     .about-text-div {
         height: 73vh;
         overflow-y: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+    }
+
+    .about-text-div::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0;
     }
 
     .about-text-image {
@@ -120,6 +144,14 @@
     .about-text-div {
         height: 72vh;
         overflow-y: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+    }
+
+    .about-text-div::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0;
     }
 
     .about-text-image {
@@ -141,7 +173,7 @@
 @media (min-width: $xl-min-width) and (max-width: $xl-max-width) {
     .about-container {
         position: absolute;
-        top: 7%;
+        top: 9%;
         left: 1%;
         right: 1%;
     }
@@ -154,8 +186,16 @@
     }
 
     .about-text-div {
-        height: 78vh;
+        height: 71vh;
         overflow-y: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+    }
+
+    .about-text-div::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0;
     }
 
     .about-text-image {
@@ -170,14 +210,14 @@
 
     p.about-text-description {
         font-family: "Dekko", cursive;
-        font-size: 35px;
+        font-size: 25px;
     }
 }
 
 @media (min-width: $xxl-min-width) {
     .about-container {
         position: absolute;
-        top: 8%;
+        top: 9%;
         left: 1%;
         right: 1%;
     }
@@ -190,8 +230,16 @@
     }
 
     .about-text-div {
-        height: 75vh;
+        height: 72vh;
         overflow-y: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+    }
+
+    .about-text-div::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0;
     }
 
     .about-text-image {
