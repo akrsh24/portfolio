@@ -1,6 +1,37 @@
 @import "../../util/variables";
 
 @media (min-width: $xs-min-width) and (max-width: $xs-max-width) {
+    .about-container {
+        position: absolute;
+        top: 8%;
+        left: 1%;
+        right: 1%;
+    }
+
+    .about-text-container {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        color: white;
+    }
+
+    .about-text-div {
+        height: 70vh;
+        overflow-y: scroll;
+    }
+
+    .about-text-image {
+        width: 56%;
+    }
+
+    div > img {
+        max-width: 100%;
+    }
+
+    p.about-text-description {
+        font-family: "Dekko", cursive;
+        font-size: 17px;
+    }
 }
 
 @media (min-width: $sm-min-width) and (max-width: $sm-max-width) {
@@ -19,29 +50,162 @@
     }
 
     .about-text-div {
-        max-height: calc(100vh - 108px);
-        overflow-y: auto;
+        height: 73vh;
+        overflow-y: scroll;
     }
 
     .about-text-image {
-        position: relative;
-        width: 60%;
-        left: 22%;
+        width: 56%;
     }
 
     div > img {
         max-width: 100%;
     }
+
+    p.about-text-description {
+        font-family: "Dekko", cursive;
+        font-size: 20px;
+    }
 }
 
 @media (min-width: $md-min-width) and (max-width: $md-max-width) {
+    .about-container {
+        position: absolute;
+        top: 9%;
+        left: 1%;
+        right: 1%;
+    }
+
+    .about-text-container {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        color: white;
+    }
+
+    .about-text-div {
+        height: 73vh;
+        overflow-y: scroll;
+    }
+
+    .about-text-image {
+        width: 40%;
+    }
+
+    div > img {
+        max-width: 100%;
+    }
+
+    p.about-text-description {
+        font-family: "Dekko", cursive;
+        font-size: 22px;
+    }
 }
 
 @media (min-width: $lg-min-width) and (max-width: $lg-max-width) {
+    .about-container {
+        position: absolute;
+        top: 9%;
+        left: 1%;
+        right: 1%;
+    }
+
+    .about-text-container {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        color: white;
+    }
+
+    .about-text-div {
+        height: 72vh;
+        overflow-y: scroll;
+    }
+
+    .about-text-image {
+        width: 25%;
+        position: relative;
+        left: 38%;
+    }
+
+    div > img {
+        max-width: 100%;
+    }
+
+    p.about-text-description {
+        font-family: "Dekko", cursive;
+        font-size: 25px;
+    }
 }
 
 @media (min-width: $xl-min-width) and (max-width: $xl-max-width) {
+    .about-container {
+        position: absolute;
+        top: 7%;
+        left: 1%;
+        right: 1%;
+    }
+
+    .about-text-container {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        color: white;
+    }
+
+    .about-text-div {
+        height: 78vh;
+        overflow-y: scroll;
+    }
+
+    .about-text-image {
+        width: 25%;
+        position: relative;
+        left: 38%;
+    }
+
+    div > img {
+        max-width: 100%;
+    }
+
+    p.about-text-description {
+        font-family: "Dekko", cursive;
+        font-size: 35px;
+    }
 }
 
 @media (min-width: $xxl-min-width) {
+    .about-container {
+        position: absolute;
+        top: 8%;
+        left: 1%;
+        right: 1%;
+    }
+
+    .about-text-container {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        color: white;
+    }
+
+    .about-text-div {
+        height: 75vh;
+        overflow-y: scroll;
+    }
+
+    .about-text-image {
+        width: 25%;
+        position: relative;
+        left: 38%;
+    }
+
+    div > img {
+        max-width: 100%;
+    }
+
+    p.about-text-description {
+        font-family: "Dekko", cursive;
+        font-size: 25px;
+    }
 }

@@ -29,17 +29,17 @@ export const appBarList = [
         "name": "About",
         "link": "/portfolio/about"
     },
-    {
-        "name": "Resume",
-        "link": "/portfolio/resume"
-    },
-    {
-        "name": "Certifications",
-        "link": "/portfolio/certifications"
-    },
-    {
-        "name": "Contact",
-        "link": "/portfolio/contact"
-    }
+    // {
+    //     "name": "Resume",
+    //     "link": "/portfolio/resume"
+    // },
+    // {
+    //     "name": "Certifications",
+    //     "link": "/portfolio/certifications"
+    // },
+    // {
+    //     "name": "Contact",
+    //     "link": "/portfolio/contact"
+    // }
 ];
 //----------------------

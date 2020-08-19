@@ -49,7 +49,9 @@ function Navbar() {
             <AppBar position="static" className={classes.appBar}>
                 <Toolbar>
                     <Typography className={classes.title}>
-                        Akarsh Srivastava
+                        <NavLink exact to="/" className={classes.navLinkStyle}>
+                            Akarsh Srivastava
+                        </NavLink>
                     </Typography>
                     {
                         breakpointMatches ?
