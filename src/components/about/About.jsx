@@ -32,7 +32,10 @@ function About() {
                             <br />
                             In my not so busy day, I usually keep myself engaged in other developer's post and try to code more on new projects ideas.
                             <br />
-                            I never want to let my guard down from learning new things.
+                            I never want to let my guard down from learning new things. You can drop me a mail anytime.
+                            <a href="mailto:akrsh24@gmail.com">
+                                <span class="material-icons" style={{ marginLeft: "10px", marginTop: "2px", textDecoration: "none", color: "white" }}>email</span>
+                            </a>
                         </p>
                     </div>
                 </div>
