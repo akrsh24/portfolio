@@ -1,7 +1,5 @@
 @import "../../util/variables";
 
-$background-url: url("./image_2.jpeg");
-
 @media (min-width: $xs-min-width) and (max-width: $xs-max-width) {
     .home-section {
         position: absolute;
@@ -47,14 +45,14 @@ $background-url: url("./image_2.jpeg");
         text-align: center;
         color: white;
         font-family: "Fredoka One", cursive;
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .home-section .home-description {
         text-align: center;
         color: white;
         font-family: "Roboto Slab", serif;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .home-section .home-social {
@@ -107,19 +105,19 @@ $background-url: url("./image_2.jpeg");
         text-align: left;
         color: white;
         font-family: "Fredoka One", cursive;
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .home-section .home-description {
         text-align: left;
         color: white;
         font-family: "Roboto Slab", serif;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .home-section .home-social {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
 }
 
@@ -137,19 +135,19 @@ $background-url: url("./image_2.jpeg");
         text-align: left;
         color: white;
         font-family: "Fredoka One", cursive;
-        font-size: 50px;
+        font-size: 35px;
     }
 
     .home-section .home-description {
         text-align: left;
         color: white;
         font-family: "Roboto Slab", serif;
-        font-size: 40px;
+        font-size: 25px;
     }
 
     .home-section .home-social {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
 }
 
@@ -167,18 +165,18 @@ $background-url: url("./image_2.jpeg");
         text-align: left;
         color: white;
         font-family: "Fredoka One", cursive;
-        font-size: 60px;
+        font-size: 35px;
     }
 
     .home-section .home-description {
         text-align: left;
         color: white;
         font-family: "Roboto Slab", serif;
-        font-size: 50px;
+        font-size: 25px;
     }
 
     .home-section .home-social {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
 }

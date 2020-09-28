@@ -19,13 +19,16 @@ const useStyles = makeStyles(() => ({
             fontSize: 30
         },
         [theme.breakpoints.only('lg')]: {
-            fontSize: 35
+            fontSize: 35,
+            marginRight: "35px"
         },
         [theme.breakpoints.only('xl')]: {
-            fontSize: 35
+            fontSize: 35,
+            marginRight: "35px"
         },
         [theme.breakpoints.only('xxl')]: {
-            fontSize: 35
+            fontSize: 35,
+            marginRight: "35px"
         },
     },
 }));
@@ -38,7 +41,7 @@ function Home() {
             <div className="home-container">
                 <div className="home-section">
                     <div className="home-name-title">
-                        <p>Akarsh Srivastava</p>
+                        <p style={{ marginBottom: 0 }}>Akarsh Srivastava</p>
                     </div>
 
                     <div className="home-description">
