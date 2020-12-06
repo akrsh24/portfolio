@@ -1,3 +1,3 @@
 Portfolio
 
-This is my portfolio site. Made on reactjs.
+This is my portfolio site. Made on reactjs, HTML and CSS
