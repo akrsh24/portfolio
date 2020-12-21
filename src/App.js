@@ -7,11 +7,10 @@ import './App.scss';
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <Navbar />
-        <div className="app-container">
-          <Routes />
-        </div>
+      <Navbar />
+      <div className="app-container">
+        <video src="./assets/videos/Bubble_Background_01_bg.mov" playsInline autoPlay loop muted id="bg-video"></video>
+        <Routes />
       </div>
     </BrowserRouter>
   );

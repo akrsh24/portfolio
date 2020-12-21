@@ -41,11 +41,10 @@ function Home() {
             <div className="home-container">
                 <div className="home-section">
                     <div className="home-name-title">
-                        <p style={{ marginBottom: 0 }}>Akarsh Srivastava</p>
+                        <p style={{ marginBottom: 0 }}>Hi , I'm Akarsh!</p>
                     </div>
-
                     <div className="home-description">
-                        <p>I'm a passionate Frontend Engineer</p>
+                        <p>Software Developer & Frontend Engineer, based in India</p>
                     </div>
                     <div className="home-social">
                         <div><a href="https://github.com/akrsh24" target="_blank" rel="noopener noreferrer"><GitHubIcon className={classes.socialLinks} /></a></div>

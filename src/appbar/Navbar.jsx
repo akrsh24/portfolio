@@ -17,12 +17,12 @@ const useStyles = makeStyles(() => ({
     },
     title: {
         flexGrow: 1,
-        fontFamily: 'Bangers',
+        fontFamily: "Raleway, sans-serif",
         fontSize: "24px"
     },
     appBarListStyle: {
         marginRight: theme.spacing(2),
-        fontFamily: 'Bangers',
+        fontFamily: "Raleway, sans-serif",
         fontSize: "16px",
     },
     navLinkStyle: {
