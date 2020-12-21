@@ -23,7 +23,7 @@ function About() {
                     <h2>LEARN MORE ABOUT ME</h2>
                     <div className="about-text-div">
                         <div className="about-text-image">
-                            <img src="personal_dp.jpeg" alt="akarsh_image" />
+                            <img src="./assets/images/personal_dp.jpeg" alt="akarsh_image" />
                         </div>
                         <p className="about-text-description">
                             Hi there! My name is Akarsh, and I'm a Frontend Engineer at <a href="https://www.publicissapient.com/" target="_blank" rel="noopener noreferrer" style={{ color: "#fddb3a" }}>PublicisSapient</a>.
