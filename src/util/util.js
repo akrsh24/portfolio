@@ -26,20 +26,16 @@ export const appBarList = [
         "link": "/portfolio/"
     },
     {
+        "name": "Blogs",
+        "link": "/portfolio/blogs"
+    },
+    {
+        "name": "Experience",
+        "link": "/portfolio/experience"
+    },
+    {
         "name": "About",
         "link": "/portfolio/about"
-    },
-    // {
-    //     "name": "Resume",
-    //     "link": "/portfolio/resume"
-    // },
-    // {
-    //     "name": "Certifications",
-    //     "link": "/portfolio/certifications"
-    // },
-    // {
-    //     "name": "Contact",
-    //     "link": "/portfolio/contact"
-    // }
+    }
 ];
 //----------------------
