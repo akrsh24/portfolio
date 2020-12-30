@@ -70,12 +70,18 @@
     font-size: 1.5vh;
 }
 
+.about-image-description .social-icons {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
 .about-text-section {
     width: 65%;
 }
 
 p.about-text-description {
-    font-family: $font-family;
     font-size: 2vh;
 }
 
