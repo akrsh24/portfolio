@@ -1,6 +1,9 @@
 import React from 'react';
 import './About.scss';
-import { Paper, makeStyles } from '@material-ui/core';
+import { Paper, makeStyles, Button } from '@material-ui/core';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import GetAppIcon from '@material-ui/icons/GetApp';
 
 const useStyles = makeStyles(() => ({
     aboutPaper: {
@@ -30,6 +33,13 @@ function About() {
                                     <p className="my-name">Akarsh Srivastava</p>
                                     <p className="my-title">Frontend Engineer</p>
                                     <hr />
+                                    <article className="social-icons">
+                                        <LinkedInIcon />
+                                        <GitHubIcon />
+                                    </article>
+                                    <Button startIcon={<GetAppIcon />} variant="contained" color="primary" size="small">
+                                        Resume
+                                    </Button>
                                 </section>
                             </section>
                         </section>
