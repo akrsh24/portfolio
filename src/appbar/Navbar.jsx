@@ -9,6 +9,9 @@ const useStyles = makeStyles(() => ({
     root: {
         flexGrow: 1,
     },
+    customHeight: {
+        minHeight: 64
+    },
     appBar: {
         background: "#000000"
     },
@@ -18,7 +21,7 @@ const useStyles = makeStyles(() => ({
     title: {
         flexGrow: 1,
         fontFamily: "Raleway, sans-serif",
-        fontSize: "24px"
+        fontSize: "2.5vh"
     },
     appBarListStyle: {
         marginRight: theme.spacing(2),
@@ -47,7 +50,7 @@ function Navbar() {
     return (
         <div className={classes.root}>
             <AppBar position="static" className={classes.appBar}>
-                <Toolbar>
+                <Toolbar className={classes.customHeight}>
                     <Typography className={classes.title}>
                         <NavLink exact to="/" className={classes.navLinkStyle}>
                             Akarsh Srivastava
