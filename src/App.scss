@@ -2,6 +2,10 @@
 
 $background-url: url("../src/components/home/image_2.jpeg");
 
+* {
+    font-family: "Roboto", sans-serif;
+}
+
 html,
 body {
     height: 100vh;
@@ -16,9 +20,14 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+p {
+    margin: 0;
+}
+
 .app-container {
     height: calc(100vh - 64.5px);
     width: 100vw;
+    position: relative;
 }
 
 #bg-video {
