@@ -1,17 +1,25 @@
 import React from 'react';
 import Routes from './routes/Routes';
-import Navbar from './appbar/Navbar';
+import Navbar from './components/appbar/Navbar';
 import { BrowserRouter } from 'react-router-dom';
 import './App.scss';
+import styled from 'styled-components';
+
+const StyledAppArticle = styled.article`
+  width:100%;
+  height:100%;
+`;
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <div className="app-container">
-        <video src="./assets/videos/Bubble_Background_01_bg.mov" playsInline autoPlay loop muted id="bg-video"></video>
-        <Routes />
-      </div>
+      <StyledAppArticle>
+        <video src="./assets/videos/video.mp4" autoPlay loop muted id="bg-video" type="video/mp4" />
+        <Navbar />
+        <section className="app-content">
+          <Routes />
+        </section>
+      </StyledAppArticle>
     </BrowserRouter>
   );
 }
