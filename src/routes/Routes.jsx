@@ -5,13 +5,13 @@ import About from '../components/about/About';
 import Contact from '../components/contact/Contact';
 import Certifications from '../components/certifications/Certifications';
 import Resume from '../components/resume/Resume';
-import Home from '../components/home/Home';
+import Introduction from '../components/home/Introduction';
 
 function Routes() {
     return (
         <Switch>
             <Route exact path="/" component={FirstPage} />
-            <Route exact path="/portfolio/" component={Home} />
+            <Route exact path="/portfolio/" component={Introduction} />
             <Route exact path="/portfolio/about" component={About} />
             <Route exact path="/portfolio/contact" component={Contact} />
             <Route exact path="/portfolio/certifications" component={Certifications} />

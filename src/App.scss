@@ -1,14 +1,9 @@
 @import "./util/variables";
 
 .app-content {
-    min-height: 94vh;
+    height: 94vh;
     width: 100%;
     position: absolute;
     top:6vh;
 }
 
-#bg-video {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
