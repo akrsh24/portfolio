@@ -28,6 +28,8 @@ const StyledIntroText = styled.div`
    color: #ffffff;
 `;
 
+const titleSet = ["Software Engineer", "Frontend Engineer", "Enthusiastic Coder"];
+
 const Introduction = () => {
 
     const titleRef = useRef();
@@ -43,7 +45,7 @@ const Introduction = () => {
                 translateZ: 0,
                 easing: "easeOutExpo",
                 duration: 950,
-                delay: (el, i) => 150 * i
+                delay: (el, i) => 100 * i
             })
     });
 
@@ -51,10 +53,10 @@ const Introduction = () => {
         <StyledIntroArticle>
             <StyledIntroSection>
                 <StyledIntroText>
-                    <h1 className="ml2" ref={titleRef}>Hi , I'm Akarsh!</h1>
+                    <h1>Hi , I'm Akarsh!</h1>
                 </StyledIntroText>
                 <StyledIntroText>
-                    <h1>A Software Developer</h1>
+                    <h1 className="ml2" ref={titleRef}>I'm a {titleSet[0]}</h1>
                 </StyledIntroText>
             </StyledIntroSection>
         </StyledIntroArticle>
