@@ -1,67 +1,54 @@
 import React from 'react';
-import './About.scss';
-import { Paper, makeStyles, Button } from '@material-ui/core';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import GetAppIcon from '@material-ui/icons/GetApp';
+import styled from 'styled-components';
+import HireMeButton from '../../util/hireMe/HireButton';
+import AboutBioComponent from './bio/AboutBioComponent';
+import AboutIntro from './intro/AboutIntro';
 
-const useStyles = makeStyles(() => ({
-    aboutPaper: {
-        backgroundColor: "rgba(0, 0, 0, 0.8)",
+const StyledAboutContainer = styled.section`
+    min-height:50vh;
+    max-height:80vh;
+    width:50vw;
+    margin: 5vh auto;
+
+    padding: 0 5vw;
+
+    /* Glassmorphism CSS */
+
+    background: rgba( 255, 255, 255, 0.10 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+
+    /* Flex property */
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-content:center;
+    text-align:center;
+    color:#ffffff;
+
+
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; // Internet Explorer 10+
+
+    &::-webkit-scrollbar{
+    /* WebKit */
+    width: 0;
+    height: 0;
     }
-}));
+`;
 
-function About() {
-
-    const classes = useStyles();
-
+const About = () => {
     return (
-        <div className="about-container">
-            <Paper
-                elevation={3}
-                className={classes.aboutPaper}
-            >
-                <article className="about-content-container">
-                    <header>
-                        <h1 style={{ fontSize: "2.5vh", marginTop: 0 }}>LEARN MORE ABOUT ME</h1>
-                    </header>
-                    <article className="about-content-article">
-                        <section className="about-image-section">
-                            <img src="./assets/images/personal_dp.jpeg" alt="akarsh_image" />
-                            <section className="about-image-description">
-                                <section>
-                                    <p className="my-name">Akarsh Srivastava</p>
-                                    <p className="my-title">Frontend Engineer</p>
-                                    <hr />
-                                    <article className="social-icons">
-                                        <LinkedInIcon />
-                                        <GitHubIcon />
-                                    </article>
-                                    <Button startIcon={<GetAppIcon />} variant="contained" color="primary" size="small">
-                                        Resume
-                                    </Button>
-                                </section>
-                            </section>
-                        </section>
-                        <section className="about-text-section">
-                            <p className="about-text-description">
-                                Hi there! My name is Akarsh, and I'm a Frontend Engineer at <a href="https://www.publicissapient.com/" target="_blank" rel="noopener noreferrer" style={{ color: "#fddb3a" }}>PublicisSapient</a>.
-                            <br />
-                            You can usually find me creating a SPA using ReactJS, Redux, Javascript, Java, or watching anime/TV series.
-                            <br />
-                            In my not so busy day, I usually keep myself engaged in other developer's post and try to code more on new projects ideas.
-                            <br />
-                            I never want to let my guard down from learning new things. You can drop me a mail anytime.
-                            <a href="mailto:akrsh24@gmail.com">
-                                    <span className="material-icons" style={{ marginLeft: "10px", marginTop: "2px", textDecoration: "none", color: "white" }}>email</span>
-                                </a>
-                            </p>
-                        </section>
-                    </article>
-                </article>
-            </Paper>
-        </div >
+        <StyledAboutContainer>
+            <AboutIntro />
+            <HireMeButton />
+            <AboutBioComponent />
+        </StyledAboutContainer >
     );
 }
-
 export default About;
