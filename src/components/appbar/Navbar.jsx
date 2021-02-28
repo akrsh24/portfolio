@@ -20,7 +20,7 @@ const StyledNavDiv = styled.div`
 
 const StyledTitle = styled.header`
     flex-grow:1;
-    font-size:2.5vmin;
+    font-size:2.5vmax;
     color: white;
 `;
 
