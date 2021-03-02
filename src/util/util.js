@@ -1,23 +1,24 @@
-import { createMuiTheme } from "@material-ui/core";
-
-// -------custom-breakpoints-min-values-----------------//
-export const breakpointsValues = {
-    xs: 0,
-    sm: 321.01,
-    md: 426.01,
-    lg: 769.01,
-    xl: 1025.01,
-    xxl: 1441.01
+// -------screen breakpoints-----------------//
+const size = {
+    mobileS: '320px',
+    mobileM: '375px',
+    mobileL: '425px',
+    tablet: '768px',
+    laptop: '1024px',
+    laptopL: '1440px',
+    desktop: '2560px'
 }
-//----------------------
 
-// -------custom-breakpoints-----------------//
-export const theme = createMuiTheme({
-    breakpoints: {
-        values: breakpointsValues,
-    },
-});
-//----------------------
+export const device = {
+    mobileS: `(min-width: ${size.mobileS})`,
+    mobileM: `(min-width: ${size.mobileM})`,
+    mobileL: `(min-width: ${size.mobileL})`,
+    tablet: `(min-width: ${size.tablet})`,
+    laptop: `(min-width: ${size.laptop})`,
+    laptopL: `(min-width: ${size.laptopL})`,
+    desktop: `(min-width: ${size.desktop})`,
+    desktopL: `(min-width: ${size.desktop})`
+};
 
 // -------appbar-menu-----------------//
 export const appBarList = [

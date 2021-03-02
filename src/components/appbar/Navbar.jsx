@@ -2,6 +2,8 @@ import React from 'react';
 import { StyledNavLink } from '../../util/StyledComponent';
 import styled from 'styled-components';
 import { appBarList } from '../../util/util';
+import useCurrentBreakPoint from '../../util/hooks/useCurrentBreakPoint';
+import HamburgerMenu from './hamburgerMenu/HamburgerMenu';
 
 const StyledNavDiv = styled.div`
     position:fixed;
@@ -20,7 +22,7 @@ const StyledNavDiv = styled.div`
 
 const StyledTitle = styled.header`
     flex-grow:1;
-    font-size:2.5vmax;
+    font-size:1rem;
     color: white;
 `;
 
@@ -71,10 +73,16 @@ const GetNavMenuList = () => {
 }
 
 const Navbar = () => {
+    const currentBreakpoint = useCurrentBreakPoint();
     return (
         <StyledNavDiv>
             <GetTitle />
-            <GetMenus />
+            {
+                currentBreakpoint && ["xs", "sm", "md"].includes(currentBreakpoint[0]) ?
+                    <HamburgerMenu />
+                    :
+                    <GetMenus />
+            }
         </StyledNavDiv>
     )
 }
