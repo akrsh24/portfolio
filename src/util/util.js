@@ -10,14 +10,19 @@ const size = {
 }
 
 export const device = {
-    mobileS: `(min-width: ${size.mobileS})`,
-    mobileM: `(min-width: ${size.mobileM})`,
-    mobileL: `(min-width: ${size.mobileL})`,
-    tablet: `(min-width: ${size.tablet})`,
-    laptop: `(min-width: ${size.laptop})`,
-    laptopL: `(min-width: ${size.laptopL})`,
-    desktop: `(min-width: ${size.desktop})`,
-    desktopL: `(min-width: ${size.desktop})`
+    mobileSmin: `(min-width: ${size.mobileS})`,
+    mobileSmax: `(max-width: ${size.mobileM - 1})`,
+    mobileMmin: `(min-width: ${size.mobileM})`,
+    mobileMmax: `(max-width: ${size.mobileL - 1})`,
+    mobileLmin: `(min-width: ${size.mobileL})`,
+    mobileLmax: `(max-width: ${size.tablet - 1})`,
+    tabletmin: `(min-width: ${size.tablet})`,
+    tabletmax: `(max-width: ${size.laptop - 1})`,
+    laptopmin: `(min-width: ${size.laptop})`,
+    laptopmax: `(max-width: ${size.laptopL - 1})`,
+    laptopLmin: `(min-width: ${size.laptopL})`,
+    laptopLmax: `(max-width: ${size.desktop - 1})`,
+    desktopmin: `(min-width: ${size.desktop})`,
 };
 
 // -------appbar-menu-----------------//
