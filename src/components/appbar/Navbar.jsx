@@ -73,7 +73,7 @@ const GetNavMenuList = () => {
 const Navbar = () => {
     return (
         <StyledNavDiv>
-            <GetTitle />
+            {/* <GetTitle /> */}
             <GetMenus />
         </StyledNavDiv>
     )
