@@ -18,7 +18,7 @@ const AboutBioComponent = () => {
     return (
         <StyledBioSection >
             <BioText>
-                Hi there! My name is Akarsh. I'm a Frontend Developer based out of India. I have been developing web application using ReactJS for the last 2+ years.
+                Hi there! My name is Akarsh. I'm a Frontend Developer based out of India. I have been developing web application using ReactJS for the last 3+ years.
             </BioText>
             <MySkills />
 
